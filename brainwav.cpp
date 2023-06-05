@@ -4,14 +4,15 @@
 using namespace std;
 
 
-// returns note on C diminished scale 
-string bf_note(char symbol){
+// returns relative position on the whole step/half step scale 
+int bf_note(char symbol){
     switch(symbol){
 	    case '>':
-		    return "C";
-		    break;
-	case "<":
-
+		    return 0;
+	    case '<':
+		    return 2;
+	    case '':
+	
     }
 }
 
